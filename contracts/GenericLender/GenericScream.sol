@@ -307,10 +307,8 @@ contract GenericScream is GenericLenderBase {
     }
 
     function protectedTokens() internal view override returns (address[] memory) {
-        address[] memory protected = new address[](3);
+        address[] memory protected = new address[](1);
         protected[0] = address(want);
-        protected[1] = address(cToken);
-        protected[2] = scream;
         return protected;
     }
 
